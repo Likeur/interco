@@ -1,6 +1,6 @@
-# Cabinet d'avocats — structure du site
+# Interco cabinet
 
-Pages et emplacements seulement. Les textes, portraits et articles ne sont pas rédigés.
+Site statique du cabinet, publié sur GitHub Pages. La mise en forme est faite avec Tailwind CSS. Les coordonnées, biographies et articles sont indicatifs.
 
 - `/` — Accueil
 - `/about/` — Le cabinet
@@ -9,5 +9,3 @@ Pages et emplacements seulement. Les textes, portraits et articles ne sont pas r
 - `/news/` — Actualités
 - `/contact/` — Contact
 - `/location/` — Localisation et carte
-
-Les coordonnées entre crochets sont des emplacements à remplacer.

@@ -1,38 +1,102 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth motion-reduce:scroll-auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Le cabinet — Cabinet d'avocats [Nom du cabinet]</title>
-    <link rel="stylesheet" href="../assets/css/site.css" />
+    <title>Le cabinet — Interco cabinet</title>
+    <meta name="description" content="Présentation d'Interco cabinet, cabinet d'avocats à Paris : histoire, manière de travailler et valeurs." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/js/tailwind-config.js"></script>
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="../">Cabinet d'avocats <span>[Nom du cabinet]</span></a>
-      <nav aria-label="Sections">
-        <a href="../">Accueil</a>
-        <a href="./" aria-current="page">Le cabinet</a>
-        <a href="../practice-areas/">Domaines</a>
-        <a href="../team/">Équipe</a>
-        <a href="../news/">Actualités</a>
-        <a href="../contact/">Contact</a>
-        <a href="../location/">Localisation</a>
-      </nav>
+  <body class="bg-beige-100 font-sans text-chocolate-900 antialiased">
+    <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-beige-50 focus:px-3 focus:py-2">Aller au contenu</a>
+    <div class="bg-chocolate-900 text-beige-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-5 py-2 text-xs tracking-wide sm:px-8">
+        <p>12 rue de la Paix, 75002 Paris <span class="text-beige-300">· adresse indicative</span></p>
+        <p><a class="hover:text-beige-50" href="tel:+33142680000">+33 1 42 68 00 00</a></p>
+      </div>
+    </div>
+    <header class="sticky top-0 z-40 border-b border-beige-300/80 bg-beige-50/95 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-4 sm:px-8">
+        <a href="../" class="font-serif text-xl tracking-tight text-chocolate-900">Interco cabinet</a>
+        <button type="button" class="border border-chocolate-800 px-3 py-1.5 text-sm md:hidden" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Menu</button>
+        <nav id="site-nav" aria-label="Sections" class="flex w-full flex-col gap-2 border-t border-beige-200 pt-3 text-sm max-md:hidden md:w-auto md:flex-row md:items-center md:gap-5 md:border-0 md:pt-0">
+          <a class="hover:text-chocolate-600" href="../">Accueil</a>
+          <a href="./" aria-current="page" class="border-b border-chocolate-800 pb-0.5 font-semibold">Le cabinet</a>
+          <a class="hover:text-chocolate-600" href="../practice-areas/">Domaines</a>
+          <a class="hover:text-chocolate-600" href="../team/">Équipe</a>
+          <a class="hover:text-chocolate-600" href="../news/">Actualités</a>
+          <a class="hover:text-chocolate-600" href="../contact/">Contact</a>
+          <a class="hover:text-chocolate-600" href="../location/">Localisation</a>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h1>Le cabinet</h1>
-      <p class="note">Présentation du cabinet — texte à rédiger.</p>
-      <h2>À prévoir</h2>
-      <ul>
-        <li>Histoire et date de création — [à rédiger]</li>
-        <li>Valeurs et manière de travailler — [à rédiger]</li>
-        <li>Barreau — [Barreau]</li>
-        <li>Chiffres — [à compléter]</li>
-      </ul>
+    <main id="contenu">
+      <section class="mx-auto grid max-w-6xl items-end gap-8 px-5 py-14 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div>
+          <p class="text-xs uppercase tracking-[0.22em] text-chocolate-600">Le cabinet</p>
+          <h1 class="mt-3 font-serif text-5xl leading-tight">Interco cabinet, un cabinet à taille humaine.</h1>
+          <p class="mt-5 max-w-xl text-lg leading-relaxed text-chocolate-700">Le cabinet est présenté ici avec des repères indicatifs : une installation parisienne en 2009, une équipe de trois avocats, une préférence pour les dossiers où l'on peut encore parler directement.</p>
+        </div>
+        <img src="../assets/images/meeting.jpg" alt="Entretien autour d'une table, documents ouverts" class="aspect-[4/3] w-full object-cover" />
+      </section>
+
+      <section class="border-y border-beige-300 bg-beige-50">
+        <div class="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 lg:grid-cols-2 lg:py-20">
+          <div>
+            <h2 class="font-serif text-3xl">Comment un dossier commence</h2>
+            <ol class="mt-6 space-y-5">
+              <li>
+                <p class="font-semibold">1. Premier échange</p>
+                <p class="text-chocolate-700">Un appel ou un message suffit pour exposer la situation. Le cabinet indique si le sujet entre dans sa pratique.</p>
+              </li>
+              <li>
+                <p class="font-semibold">2. Rendez-vous</p>
+                <p class="text-chocolate-700">L'entretien a lieu au 12 rue de la Paix, ou à distance si le déplacement n'est pas utile. Les pièces essentielles sont listées à l'avance.</p>
+              </li>
+              <li>
+                <p class="font-semibold">3. Mission écrite</p>
+                <p class="text-chocolate-700">Le périmètre, le calendrier et les honoraires sont confirmés par écrit avant que le travail de fond ne commence.</p>
+              </li>
+            </ol>
+          </div>
+          <img src="../assets/images/library.jpg" alt="Rayonnages d'ouvrages de droit" class="aspect-[4/3] w-full object-cover lg:aspect-auto lg:h-full" />
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-5 py-14 sm:px-8 lg:py-20">
+        <h2 class="font-serif text-3xl">Ce à quoi le cabinet tient</h2>
+        <ul class="mt-8 grid gap-4 md:grid-cols-3">
+          <li class="border border-beige-300 bg-beige-50 p-6">
+            <h3 class="font-serif text-2xl">Clarté</h3>
+            <p class="mt-3 text-sm leading-relaxed text-chocolate-700">Chaque étape est nommée : ce qui est demandé au client, ce que l'avocat fait, ce qui dépend du tribunal ou de l'autre partie.</p>
+          </li>
+          <li class="border border-beige-300 bg-beige-50 p-6">
+            <h3 class="font-serif text-2xl">Disponibilité</h3>
+            <p class="mt-3 text-sm leading-relaxed text-chocolate-700">Les messages reçoivent un accusé dans le jour ouvré. L'avocat en charge reste le même du premier rendez-vous jusqu'à la clôture.</p>
+          </li>
+          <li class="border border-beige-300 bg-beige-50 p-6">
+            <h3 class="font-serif text-2xl">Confidentialité</h3>
+            <p class="mt-3 text-sm leading-relaxed text-chocolate-700">Les échanges sont couverts par le secret professionnel. Les documents ne sortent pas du dossier sans accord.</p>
+          </li>
+        </ul>
+        <p class="mt-10 max-w-3xl text-sm text-chocolate-700">Barreau indiqué à titre provisoire : Barreau de Paris. Toque, forme sociale et assurance à compléter lorsque le cabinet les communiquera.</p>
+        <a class="mt-6 inline-block bg-chocolate-900 px-5 py-3 text-sm font-semibold text-beige-50 hover:bg-chocolate-800" href="../contact/">Écrire au cabinet</a>
+      </section>
     </main>
-    <footer class="site-footer">
-      <p>Cabinet d'avocats [Nom du cabinet] — [12 rue Example], [75000] [Paris]</p>
-      <p><a href="tel:+33100000000">[+33 1 00 00 00 00]</a> — <a href="mailto:contact@cabinet.example">[contact@cabinet.example]</a></p>
+    <footer class="bg-chocolate-900 text-beige-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-end justify-between gap-4 px-5 py-10 sm:px-8">
+        <div>
+          <p class="font-serif text-2xl text-beige-50">Interco cabinet</p>
+          <p class="mt-2 text-sm text-beige-200">12 rue de la Paix, 75002 Paris · +33 1 42 68 00 00</p>
+        </div>
+        <a class="text-sm hover:text-beige-50" href="mailto:contact@interco-cabinet.example">contact@interco-cabinet.example</a>
+      </div>
+      <p class="border-t border-white/10 px-5 py-4 text-center text-xs text-beige-300">© 2026 Interco cabinet. Informations indicatives, hors conseil juridique.</p>
     </footer>
+    <script src="../assets/js/nav.js"></script>
   </body>
 </html>

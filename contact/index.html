@@ -1,51 +1,107 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth motion-reduce:scroll-auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact — Cabinet d'avocats [Nom du cabinet]</title>
-    <link rel="stylesheet" href="../assets/css/site.css" />
+    <title>Contact — Interco cabinet</title>
+    <meta name="description" content="Contacter Interco cabinet : adresse indicative, téléphone, courriel et formulaire." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/js/tailwind-config.js"></script>
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="../">Cabinet d'avocats <span>[Nom du cabinet]</span></a>
-      <nav aria-label="Sections">
-        <a href="../">Accueil</a>
-        <a href="../about/">Le cabinet</a>
-        <a href="../practice-areas/">Domaines</a>
-        <a href="../team/">Équipe</a>
-        <a href="../news/">Actualités</a>
-        <a href="./" aria-current="page">Contact</a>
-        <a href="../location/">Localisation</a>
-      </nav>
+  <body class="bg-beige-100 font-sans text-chocolate-900 antialiased">
+    <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-beige-50 focus:px-3 focus:py-2">Aller au contenu</a>
+    <div class="bg-chocolate-900 text-beige-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-5 py-2 text-xs tracking-wide sm:px-8">
+        <p>12 rue de la Paix, 75002 Paris <span class="text-beige-300">· adresse indicative</span></p>
+        <p><a class="hover:text-beige-50" href="tel:+33142680000">+33 1 42 68 00 00</a></p>
+      </div>
+    </div>
+    <header class="sticky top-0 z-40 border-b border-beige-300/80 bg-beige-50/95 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-4 sm:px-8">
+        <a href="../" class="font-serif text-xl tracking-tight text-chocolate-900">Interco cabinet</a>
+        <button type="button" class="border border-chocolate-800 px-3 py-1.5 text-sm md:hidden" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Menu</button>
+        <nav id="site-nav" aria-label="Sections" class="flex w-full flex-col gap-2 border-t border-beige-200 pt-3 text-sm max-md:hidden md:w-auto md:flex-row md:items-center md:gap-5 md:border-0 md:pt-0">
+          <a class="hover:text-chocolate-600" href="../">Accueil</a>
+          <a class="hover:text-chocolate-600" href="../about/">Le cabinet</a>
+          <a class="hover:text-chocolate-600" href="../practice-areas/">Domaines</a>
+          <a class="hover:text-chocolate-600" href="../team/">Équipe</a>
+          <a class="hover:text-chocolate-600" href="../news/">Actualités</a>
+          <a href="./" aria-current="page" class="border-b border-chocolate-800 pb-0.5 font-semibold">Contact</a>
+          <a class="hover:text-chocolate-600" href="../location/">Localisation</a>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h1>Contact</h1>
-      <p class="note">Coordonnées provisoires — à remplacer. Le formulaire n'envoie rien.</p>
-      <dl>
-        <dt>Cabinet</dt>
-        <dd>[Nom du cabinet]</dd>
-        <dt>Adresse</dt>
-        <dd>[12 rue Example], [75000] [Paris]</dd>
-        <dt>Téléphone</dt>
-        <dd><a href="tel:+33100000000">[+33 1 00 00 00 00]</a></dd>
-        <dt>Email</dt>
-        <dd><a href="mailto:contact@cabinet.example">[contact@cabinet.example]</a></dd>
-        <dt>Horaires</dt>
-        <dd>[Lundi au vendredi, 9h00–18h00]</dd>
-      </dl>
-      <form class="contact-form" action="#" method="post">
-        <label>Nom <input type="text" name="nom" autocomplete="name" /></label>
-        <label>Email <input type="email" name="email" autocomplete="email" /></label>
-        <label>Téléphone <input type="tel" name="telephone" autocomplete="tel" /></label>
-        <label>Message <textarea name="message" rows="5"></textarea></label>
-        <button type="submit">Envoyer</button>
-      </form>
-      <p class="note">Plan d'accès : <a href="../location/">localisation et carte</a>.</p>
+    <main id="contenu" class="mx-auto grid max-w-6xl gap-12 px-5 py-14 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:py-20">
+      <section>
+        <p class="text-xs uppercase tracking-[0.22em] text-chocolate-600">Contact</p>
+        <h1 class="mt-3 font-serif text-5xl leading-tight">Écrire à Interco cabinet</h1>
+        <p class="mt-5 leading-relaxed text-chocolate-700">Les coordonnées sont indicatives. Pour un premier échange, indiquez le domaine concerné et si une date d'audience est déjà fixée.</p>
+        <dl class="mt-8 space-y-4 text-sm">
+          <div>
+            <dt class="text-xs uppercase tracking-[0.16em] text-chocolate-600">Cabinet</dt>
+            <dd class="mt-1 font-serif text-xl">Interco cabinet</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-[0.16em] text-chocolate-600">Adresse</dt>
+            <dd class="mt-1">12 rue de la Paix<br />75002 Paris</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-[0.16em] text-chocolate-600">Téléphone</dt>
+            <dd class="mt-1"><a class="border-b border-chocolate-800" href="tel:+33142680000">+33 1 42 68 00 00</a></dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-[0.16em] text-chocolate-600">Courriel</dt>
+            <dd class="mt-1"><a class="border-b border-chocolate-800" href="mailto:contact@interco-cabinet.example">contact@interco-cabinet.example</a></dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-[0.16em] text-chocolate-600">Horaires</dt>
+            <dd class="mt-1">Lundi au vendredi, 9h00–18h00<br />Accueil sur rendez-vous</dd>
+          </div>
+        </dl>
+        <p class="mt-6 text-sm"><a class="font-semibold hover:text-chocolate-600" href="../location/">Plan d'accès et carte</a></p>
+      </section>
+      <section class="border border-beige-300 bg-beige-50 p-6 sm:p-8">
+        <h2 class="font-serif text-2xl">Message</h2>
+        <p class="mt-2 text-sm text-chocolate-700">Ce formulaire est indicatif : il n'envoie rien. Écrivez à contact@interco-cabinet.example, ou utilisez votre messagerie via le bouton.</p>
+        <form class="mt-6 grid gap-4" action="mailto:contact@interco-cabinet.example" method="post" enctype="text/plain">
+          <label class="grid gap-1 text-sm">Nom
+            <input class="border border-beige-300 bg-beige-100 px-3 py-2 text-base outline-none focus:border-chocolate-700" type="text" name="nom" autocomplete="name" required />
+          </label>
+          <label class="grid gap-1 text-sm">Courriel
+            <input class="border border-beige-300 bg-beige-100 px-3 py-2 text-base outline-none focus:border-chocolate-700" type="email" name="courriel" autocomplete="email" required />
+          </label>
+          <label class="grid gap-1 text-sm">Téléphone
+            <input class="border border-beige-300 bg-beige-100 px-3 py-2 text-base outline-none focus:border-chocolate-700" type="tel" name="telephone" autocomplete="tel" />
+          </label>
+          <label class="grid gap-1 text-sm">Sujet
+            <select class="border border-beige-300 bg-beige-100 px-3 py-2 text-base outline-none focus:border-chocolate-700" name="sujet">
+              <option>Droit des sociétés</option>
+              <option>Droit commercial</option>
+              <option>Droit du travail</option>
+              <option>Droit de la famille</option>
+              <option>Droit immobilier</option>
+              <option>Droit pénal</option>
+              <option>Contentieux</option>
+              <option>Autre</option>
+            </select>
+          </label>
+          <label class="grid gap-1 text-sm">Message
+            <textarea class="border border-beige-300 bg-beige-100 px-3 py-2 text-base outline-none focus:border-chocolate-700" name="message" rows="6" required></textarea>
+          </label>
+          <button class="justify-self-start bg-chocolate-900 px-5 py-3 text-sm font-semibold text-beige-50 hover:bg-chocolate-800" type="submit">Ouvrir un courriel</button>
+        </form>
+      </section>
     </main>
-    <footer class="site-footer">
-      <p>Cabinet d'avocats [Nom du cabinet] — [12 rue Example], [75000] [Paris]</p>
-      <p><a href="tel:+33100000000">[+33 1 00 00 00 00]</a> — <a href="mailto:contact@cabinet.example">[contact@cabinet.example]</a></p>
+    <footer class="bg-chocolate-900 text-beige-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-end justify-between gap-4 px-5 py-10 sm:px-8">
+        <p class="font-serif text-2xl text-beige-50">Interco cabinet</p>
+        <p class="text-sm text-beige-200">Lundi au vendredi, 9h00–18h00</p>
+      </div>
+      <p class="border-t border-white/10 px-5 py-4 text-center text-xs text-beige-300">© 2026 Interco cabinet. Coordonnées indicatives.</p>
     </footer>
+    <script src="../assets/js/nav.js"></script>
   </body>
 </html>

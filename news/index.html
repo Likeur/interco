@@ -1,48 +1,91 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth motion-reduce:scroll-auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Actualités — Cabinet d'avocats [Nom du cabinet]</title>
-    <link rel="stylesheet" href="../assets/css/site.css" />
+    <title>Actualités — Interco cabinet</title>
+    <meta name="description" content="Notes d'Interco cabinet sur les pactes d'associés, la rupture conventionnelle et l'achat immobilier." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/js/tailwind-config.js"></script>
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="../">Cabinet d'avocats <span>[Nom du cabinet]</span></a>
-      <nav aria-label="Sections">
-        <a href="../">Accueil</a>
-        <a href="../about/">Le cabinet</a>
-        <a href="../practice-areas/">Domaines</a>
-        <a href="../team/">Équipe</a>
-        <a href="./" aria-current="page">Actualités</a>
-        <a href="../contact/">Contact</a>
-        <a href="../location/">Localisation</a>
-      </nav>
+  <body class="bg-beige-100 font-sans text-chocolate-900 antialiased">
+    <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-beige-50 focus:px-3 focus:py-2">Aller au contenu</a>
+    <div class="bg-chocolate-900 text-beige-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-5 py-2 text-xs tracking-wide sm:px-8">
+        <p>12 rue de la Paix, 75002 Paris <span class="text-beige-300">· adresse indicative</span></p>
+        <p><a class="hover:text-beige-50" href="tel:+33142680000">+33 1 42 68 00 00</a></p>
+      </div>
+    </div>
+    <header class="sticky top-0 z-40 border-b border-beige-300/80 bg-beige-50/95 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-4 sm:px-8">
+        <a href="../" class="font-serif text-xl tracking-tight text-chocolate-900">Interco cabinet</a>
+        <button type="button" class="border border-chocolate-800 px-3 py-1.5 text-sm md:hidden" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Menu</button>
+        <nav id="site-nav" aria-label="Sections" class="flex w-full flex-col gap-2 border-t border-beige-200 pt-3 text-sm max-md:hidden md:w-auto md:flex-row md:items-center md:gap-5 md:border-0 md:pt-0">
+          <a class="hover:text-chocolate-600" href="../">Accueil</a>
+          <a class="hover:text-chocolate-600" href="../about/">Le cabinet</a>
+          <a class="hover:text-chocolate-600" href="../practice-areas/">Domaines</a>
+          <a class="hover:text-chocolate-600" href="../team/">Équipe</a>
+          <a href="./" aria-current="page" class="border-b border-chocolate-800 pb-0.5 font-semibold">Actualités</a>
+          <a class="hover:text-chocolate-600" href="../contact/">Contact</a>
+          <a class="hover:text-chocolate-600" href="../location/">Localisation</a>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h1>Actualités</h1>
-      <p class="note">Journal du cabinet — articles à rédiger.</p>
-      <ul class="slots">
-        <li class="slot">
-          <h2>[Titre de l'actualité]</h2>
-          <p>[Date]</p>
-          <p>[Résumé à rédiger]</p>
-        </li>
-        <li class="slot">
-          <h2>[Titre de l'actualité]</h2>
-          <p>[Date]</p>
-          <p>[Résumé à rédiger]</p>
-        </li>
-        <li class="slot">
-          <h2>[Titre de l'actualité]</h2>
-          <p>[Date]</p>
-          <p>[Résumé à rédiger]</p>
-        </li>
-      </ul>
+    <main id="contenu" class="mx-auto max-w-6xl px-5 py-14 sm:px-8 lg:py-20">
+      <p class="text-xs uppercase tracking-[0.22em] text-chocolate-600">Actualités</p>
+      <h1 class="mt-3 font-serif text-5xl leading-tight">Notes du cabinet</h1>
+      <p class="mt-5 max-w-2xl text-lg text-chocolate-700">Articles indicatifs, rédigés pour illustrer le ton du site. Ils ne tiennent pas compte d'un dossier particulier et ne valent pas consultation.</p>
+
+      <div class="mt-12 space-y-16">
+        <article id="pacte-associes" class="scroll-mt-28 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <img src="../assets/images/news-pacte.jpg" alt="Marteau de président et livres de droit" class="aspect-[3/2] w-full object-cover" />
+          <div>
+            <p class="text-sm text-chocolate-600">2 novembre 2026 · Camille Laurent</p>
+            <h2 class="mt-2 font-serif text-3xl leading-snug">Pactes d'associés : trois lignes à relire avant une entrée au capital</h2>
+            <div class="mt-4 space-y-4 leading-relaxed text-chocolate-800">
+              <p>Un pacte signé à la création vieillit mal dès qu'un nouvel associé apporte de l'argent ou du temps. La clause de sortie conjointe, la promesse de cession et la répartition des dividendes méritent une relecture avant la signature, pas après le premier désaccord.</p>
+              <p>Interco cabinet propose, à titre d'exemple de méthode, de vérifier trois points : qui peut forcer une vente, à quel prix, et ce qu'il advient des parts si l'un des associés cesse son activité. Le reste du pacte se discute ensuite, une fois ces trois verrous compris.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="rupture-conventionnelle" class="scroll-mt-28 grid gap-8 border-t border-beige-300 pt-16 lg:grid-cols-[0.9fr_1.1fr]">
+          <div class="lg:order-2">
+            <img src="../assets/images/news-travail.jpg" alt="Bureau de travail avec un ordinateur et des notes" class="aspect-[3/2] w-full object-cover" />
+          </div>
+          <div>
+            <p class="text-sm text-chocolate-600">18 septembre 2026 · Marc Diallo</p>
+            <h2 class="mt-2 font-serif text-3xl leading-snug">Rupture conventionnelle : ce qu'il faut avoir sous les yeux avant de signer</h2>
+            <div class="mt-4 space-y-4 leading-relaxed text-chocolate-800">
+              <p>La rupture conventionnelle n'est ni une démission ni un licenciement. Le délai de rétractation de quinze jours calendaires court à compter du lendemain de la signature. Le confondre avec un délai de jours ouvrés est une erreur fréquente, côté employeur comme côté salarié.</p>
+              <p>Avant de signer, il est utile de poser le montant de l'indemnité à côté de l'indemnité légale de licenciement, de lister les sommes déjà dues (congés, variable, notes de frais) et de vérifier que la date de sortie laisse le temps d'organiser la suite. Ce rappel est général ; le chiffre juste dépend du contrat et de la convention collective.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="achat-immobilier" class="scroll-mt-28 grid gap-8 border-t border-beige-300 pt-16 lg:grid-cols-[1.1fr_0.9fr]">
+          <img src="../assets/images/news-immo.jpg" alt="Livres ouverts sur une table en bois" class="aspect-[3/2] w-full object-cover" />
+          <div>
+            <p class="text-sm text-chocolate-600">4 juin 2026 · Inès Morel</p>
+            <h2 class="mt-2 font-serif text-3xl leading-snug">Achat immobilier : trois clauses que l'on relit toujours</h2>
+            <div class="mt-4 space-y-4 leading-relaxed text-chocolate-800">
+              <p>Dans une promesse de vente, trois passages concentrent les mauvaises surprises : la condition suspensive de prêt (montant, durée, taux plafond), la liste des diagnostics et ce qui est dit des travaux votés en assemblée de copropriété.</p>
+              <p>Une clause vague sur les travaux « à la charge de l'acquéreur » peut couvrir une rénovation déjà décidée, dont l'appel de fonds arrive après la signature. Faire écrire le numéro et la date de l'assemblée évite la discussion plus tard. Là encore, il s'agit d'un réflexe de lecture, pas d'une règle universelle.</p>
+            </div>
+          </div>
+        </article>
+      </div>
     </main>
-    <footer class="site-footer">
-      <p>Cabinet d'avocats [Nom du cabinet] — [12 rue Example], [75000] [Paris]</p>
-      <p><a href="tel:+33100000000">[+33 1 00 00 00 00]</a> — <a href="mailto:contact@cabinet.example">[contact@cabinet.example]</a></p>
+    <footer class="bg-chocolate-900 text-beige-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-end justify-between gap-4 px-5 py-10 sm:px-8">
+        <p class="font-serif text-2xl text-beige-50">Interco cabinet</p>
+        <a class="text-sm hover:text-beige-50" href="../contact/">Poser une question</a>
+      </div>
+      <p class="border-t border-white/10 px-5 py-4 text-center text-xs text-beige-300">© 2026 Interco cabinet. Articles indicatifs, hors conseil juridique.</p>
     </footer>
+    <script src="../assets/js/nav.js"></script>
   </body>
 </html>

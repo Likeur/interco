@@ -1,50 +1,86 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth motion-reduce:scroll-auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Localisation — Cabinet d'avocats [Nom du cabinet]</title>
-    <link rel="stylesheet" href="../assets/css/site.css" />
+    <title>Localisation — Interco cabinet</title>
+    <meta name="description" content="Adresse indicative d'Interco cabinet, 12 rue de la Paix, 75002 Paris, accès et carte." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/js/tailwind-config.js"></script>
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="../">Cabinet d'avocats <span>[Nom du cabinet]</span></a>
-      <nav aria-label="Sections">
-        <a href="../">Accueil</a>
-        <a href="../about/">Le cabinet</a>
-        <a href="../practice-areas/">Domaines</a>
-        <a href="../team/">Équipe</a>
-        <a href="../news/">Actualités</a>
-        <a href="../contact/">Contact</a>
-        <a href="./" aria-current="page">Localisation</a>
-      </nav>
+  <body class="bg-beige-100 font-sans text-chocolate-900 antialiased">
+    <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-beige-50 focus:px-3 focus:py-2">Aller au contenu</a>
+    <div class="bg-chocolate-900 text-beige-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-5 py-2 text-xs tracking-wide sm:px-8">
+        <p>12 rue de la Paix, 75002 Paris <span class="text-beige-300">· adresse indicative</span></p>
+        <p><a class="hover:text-beige-50" href="tel:+33142680000">+33 1 42 68 00 00</a></p>
+      </div>
+    </div>
+    <header class="sticky top-0 z-40 border-b border-beige-300/80 bg-beige-50/95 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-4 sm:px-8">
+        <a href="../" class="font-serif text-xl tracking-tight text-chocolate-900">Interco cabinet</a>
+        <button type="button" class="border border-chocolate-800 px-3 py-1.5 text-sm md:hidden" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Menu</button>
+        <nav id="site-nav" aria-label="Sections" class="flex w-full flex-col gap-2 border-t border-beige-200 pt-3 text-sm max-md:hidden md:w-auto md:flex-row md:items-center md:gap-5 md:border-0 md:pt-0">
+          <a class="hover:text-chocolate-600" href="../">Accueil</a>
+          <a class="hover:text-chocolate-600" href="../about/">Le cabinet</a>
+          <a class="hover:text-chocolate-600" href="../practice-areas/">Domaines</a>
+          <a class="hover:text-chocolate-600" href="../team/">Équipe</a>
+          <a class="hover:text-chocolate-600" href="../news/">Actualités</a>
+          <a class="hover:text-chocolate-600" href="../contact/">Contact</a>
+          <a href="./" aria-current="page" class="border-b border-chocolate-800 pb-0.5 font-semibold">Localisation</a>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h1>Localisation</h1>
-      <p class="note">Adresse à confirmer. Le repère sur la carte est provisoire.</p>
-      <dl>
-        <dt>Adresse</dt>
-        <dd>[12 rue Example], [75000] [Paris]</dd>
-        <dt>Accès</dt>
-        <dd>[Transports et stationnement — à préciser]</dd>
-        <dt>Horaires</dt>
-        <dd>[Lundi au vendredi, 9h00–18h00]</dd>
-      </dl>
-      <h2>Carte</h2>
-      <iframe
-        class="map-frame"
-        title="Carte provisoire — adresse du cabinet à confirmer"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=2.331%2C48.858%2C2.373%2C48.876&amp;layer=mapnik&amp;marker=48.866%2C2.352"
-        loading="lazy"
-      ></iframe>
-      <p class="note">
-        <a href="https://www.openstreetmap.org/?mlat=48.866&amp;mlon=2.352#map=15/48.866/2.352">Ouvrir la carte</a>
-        — repère provisoire, à remplacer par l'adresse du cabinet.
-      </p>
+    <main id="contenu">
+      <section class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 sm:px-8 lg:grid-cols-2 lg:py-20">
+        <div>
+          <p class="text-xs uppercase tracking-[0.22em] text-chocolate-600">Localisation</p>
+          <h1 class="mt-3 font-serif text-5xl leading-tight">Venir à Interco cabinet</h1>
+          <p class="mt-5 leading-relaxed text-chocolate-700">L'adresse est indicative, placée rue de la Paix pour illustrer une installation dans le 2<sup>e</sup> arrondissement. Le repère sur la carte correspond à ce point provisoire.</p>
+          <dl class="mt-8 grid gap-4 text-sm sm:grid-cols-2">
+            <div class="border border-beige-300 bg-beige-50 p-4">
+              <dt class="text-xs uppercase tracking-[0.16em] text-chocolate-600">Adresse</dt>
+              <dd class="mt-2">Interco cabinet<br />12 rue de la Paix<br />75002 Paris</dd>
+            </div>
+            <div class="border border-beige-300 bg-beige-50 p-4">
+              <dt class="text-xs uppercase tracking-[0.16em] text-chocolate-600">Horaires</dt>
+              <dd class="mt-2">Lundi au vendredi<br />9h00–18h00<br />Sur rendez-vous</dd>
+            </div>
+            <div class="border border-beige-300 bg-beige-50 p-4">
+              <dt class="text-xs uppercase tracking-[0.16em] text-chocolate-600">Transports</dt>
+              <dd class="mt-2">Métro Opéra, lignes 3, 7 et 8 — à quelques minutes à pied. Repère indicatif.</dd>
+            </div>
+            <div class="border border-beige-300 bg-beige-50 p-4">
+              <dt class="text-xs uppercase tracking-[0.16em] text-chocolate-600">Accès</dt>
+              <dd class="mt-2">Immeuble de bureaux, 2<sup>e</sup> étage. Interphone « Interco cabinet ». Ascenseur. Stationnement en voirie limité.</dd>
+            </div>
+          </dl>
+          <p class="mt-6 text-sm"><a class="font-semibold hover:text-chocolate-600" href="../contact/">Prévenir le cabinet avant de passer</a></p>
+        </div>
+        <img src="../assets/images/building.jpg" alt="Façade d'un immeuble de bureaux, photographie indicative" class="aspect-[4/5] w-full object-cover sm:aspect-[4/3]" />
+      </section>
+      <section class="bg-beige-50" aria-labelledby="carte-titre">
+        <div class="mx-auto max-w-6xl px-5 py-12 sm:px-8">
+          <h2 id="carte-titre" class="font-serif text-3xl">Carte</h2>
+          <p class="mt-2 text-sm text-chocolate-700">Repère provisoire : 12 rue de la Paix, 75002 Paris.</p>
+          <iframe class="mt-6 h-[420px] w-full border border-beige-300" title="Carte indicative d'Interco cabinet, rue de la Paix à Paris" src="https://www.openstreetmap.org/export/embed.html?bbox=2.3205%2C48.8638%2C2.3385%2C48.8728&amp;layer=mapnik&amp;marker=48.8684%2C2.3298" loading="lazy"></iframe>
+          <p class="mt-3 text-sm"><a class="border-b border-chocolate-800 hover:text-chocolate-600" href="https://www.openstreetmap.org/?mlat=48.8684&amp;mlon=2.3298#map=17/48.8684/2.3298">Ouvrir la carte dans un nouvel onglet</a></p>
+        </div>
+      </section>
     </main>
-    <footer class="site-footer">
-      <p>Cabinet d'avocats [Nom du cabinet] — [12 rue Example], [75000] [Paris]</p>
-      <p><a href="tel:+33100000000">[+33 1 00 00 00 00]</a> — <a href="mailto:contact@cabinet.example">[contact@cabinet.example]</a></p>
+    <footer class="bg-chocolate-900 text-beige-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-end justify-between gap-4 px-5 py-10 sm:px-8">
+        <div>
+          <p class="font-serif text-2xl text-beige-50">Interco cabinet</p>
+          <p class="mt-2 text-sm text-beige-200">12 rue de la Paix, 75002 Paris</p>
+        </div>
+        <a class="text-sm hover:text-beige-50" href="tel:+33142680000">+33 1 42 68 00 00</a>
+      </div>
+      <p class="border-t border-white/10 px-5 py-4 text-center text-xs text-beige-300">© 2026 Interco cabinet. Adresse et accès indicatifs.</p>
     </footer>
+    <script src="../assets/js/nav.js"></script>
   </body>
 </html>

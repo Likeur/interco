@@ -1,61 +1,113 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth motion-reduce:scroll-auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Domaines d'intervention — Cabinet d'avocats [Nom du cabinet]</title>
-    <link rel="stylesheet" href="../assets/css/site.css" />
+    <title>Domaines d'intervention — Interco cabinet</title>
+    <meta name="description" content="Domaines d'Interco cabinet : sociétés, commercial, travail, famille, immobilier, pénal et contentieux." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/js/tailwind-config.js"></script>
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="../">Cabinet d'avocats <span>[Nom du cabinet]</span></a>
-      <nav aria-label="Sections">
-        <a href="../">Accueil</a>
-        <a href="../about/">Le cabinet</a>
-        <a href="./" aria-current="page">Domaines</a>
-        <a href="../team/">Équipe</a>
-        <a href="../news/">Actualités</a>
-        <a href="../contact/">Contact</a>
-        <a href="../location/">Localisation</a>
-      </nav>
+  <body class="bg-beige-100 font-sans text-chocolate-900 antialiased">
+    <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-beige-50 focus:px-3 focus:py-2">Aller au contenu</a>
+    <div class="bg-chocolate-900 text-beige-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-5 py-2 text-xs tracking-wide sm:px-8">
+        <p>12 rue de la Paix, 75002 Paris <span class="text-beige-300">· adresse indicative</span></p>
+        <p><a class="hover:text-beige-50" href="tel:+33142680000">+33 1 42 68 00 00</a></p>
+      </div>
+    </div>
+    <header class="sticky top-0 z-40 border-b border-beige-300/80 bg-beige-50/95 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-4 sm:px-8">
+        <a href="../" class="font-serif text-xl tracking-tight text-chocolate-900">Interco cabinet</a>
+        <button type="button" class="border border-chocolate-800 px-3 py-1.5 text-sm md:hidden" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Menu</button>
+        <nav id="site-nav" aria-label="Sections" class="flex w-full flex-col gap-2 border-t border-beige-200 pt-3 text-sm max-md:hidden md:w-auto md:flex-row md:items-center md:gap-5 md:border-0 md:pt-0">
+          <a class="hover:text-chocolate-600" href="../">Accueil</a>
+          <a class="hover:text-chocolate-600" href="../about/">Le cabinet</a>
+          <a href="./" aria-current="page" class="border-b border-chocolate-800 pb-0.5 font-semibold">Domaines</a>
+          <a class="hover:text-chocolate-600" href="../team/">Équipe</a>
+          <a class="hover:text-chocolate-600" href="../news/">Actualités</a>
+          <a class="hover:text-chocolate-600" href="../contact/">Contact</a>
+          <a class="hover:text-chocolate-600" href="../location/">Localisation</a>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h1>Domaines d'intervention</h1>
-      <p class="note">Services du cabinet — descriptifs à rédiger.</p>
-      <ul class="slots">
-        <li class="slot">
-          <h2>Droit des sociétés</h2>
-          <p>[Texte à rédiger]</p>
-        </li>
-        <li class="slot">
-          <h2>Droit commercial</h2>
-          <p>[Texte à rédiger]</p>
-        </li>
-        <li class="slot">
-          <h2>Droit du travail</h2>
-          <p>[Texte à rédiger]</p>
-        </li>
-        <li class="slot">
-          <h2>Droit de la famille</h2>
-          <p>[Texte à rédiger]</p>
-        </li>
-        <li class="slot">
-          <h2>Droit immobilier</h2>
-          <p>[Texte à rédiger]</p>
-        </li>
-        <li class="slot">
-          <h2>Droit pénal</h2>
-          <p>[Texte à rédiger]</p>
-        </li>
-        <li class="slot">
-          <h2>Contentieux</h2>
-          <p>[Texte à rédiger]</p>
-        </li>
-      </ul>
+    <main id="contenu" class="mx-auto max-w-6xl px-5 py-14 sm:px-8 lg:py-20">
+      <p class="text-xs uppercase tracking-[0.22em] text-chocolate-600">Domaines d'intervention</p>
+      <h1 class="mt-3 max-w-3xl font-serif text-5xl leading-tight">Sept pôles, une même façon de travailler.</h1>
+      <p class="mt-5 max-w-2xl text-lg text-chocolate-700">Les descriptifs ci-dessous sont indicatifs. Ils situent le type de questions reçues au cabinet ; ils ne remplacent pas un avis sur un dossier précis.</p>
+      <nav aria-label="Domaines" class="mt-8 flex flex-wrap gap-2 text-sm">
+        <a class="border border-beige-300 bg-beige-50 px-3 py-1.5 hover:border-chocolate-700" href="#droit-des-societes">Sociétés</a>
+        <a class="border border-beige-300 bg-beige-50 px-3 py-1.5 hover:border-chocolate-700" href="#droit-commercial">Commercial</a>
+        <a class="border border-beige-300 bg-beige-50 px-3 py-1.5 hover:border-chocolate-700" href="#droit-du-travail">Travail</a>
+        <a class="border border-beige-300 bg-beige-50 px-3 py-1.5 hover:border-chocolate-700" href="#droit-de-la-famille">Famille</a>
+        <a class="border border-beige-300 bg-beige-50 px-3 py-1.5 hover:border-chocolate-700" href="#droit-immobilier">Immobilier</a>
+        <a class="border border-beige-300 bg-beige-50 px-3 py-1.5 hover:border-chocolate-700" href="#droit-penal">Pénal</a>
+        <a class="border border-beige-300 bg-beige-50 px-3 py-1.5 hover:border-chocolate-700" href="#contentieux">Contentieux</a>
+      </nav>
+
+      <div class="mt-12 divide-y divide-beige-300 border-y border-beige-300">
+        <article id="droit-des-societes" class="scroll-mt-28 grid gap-4 py-8 md:grid-cols-[8rem_1fr]">
+          <p class="font-serif text-chocolate-600">01</p>
+          <div>
+            <h2 class="font-serif text-3xl">Droit des sociétés</h2>
+            <p class="mt-3 max-w-3xl leading-relaxed text-chocolate-700">Création de société, rédaction ou relecture d'un pacte d'associés, entrée ou sortie d'un associé, cession de titres, préparation d'une assemblée délicate. Le cabinet aide aussi à remettre de l'ordre dans des statuts qui n'ont plus suivi la vie de l'entreprise.</p>
+          </div>
+        </article>
+        <article id="droit-commercial" class="scroll-mt-28 grid gap-4 py-8 md:grid-cols-[8rem_1fr]">
+          <p class="font-serif text-chocolate-600">02</p>
+          <div>
+            <h2 class="font-serif text-3xl">Droit commercial</h2>
+            <p class="mt-3 max-w-3xl leading-relaxed text-chocolate-700">Contrats commerciaux, conditions générales, baux commerciaux, impayés entre professionnels, rupture de pourparlers ou de relations établies. L'objectif est d'écrire des engagements lisibles, puis de les faire respecter s'ils ne le sont pas.</p>
+          </div>
+        </article>
+        <article id="droit-du-travail" class="scroll-mt-28 grid gap-4 py-8 md:grid-cols-[8rem_1fr]">
+          <p class="font-serif text-chocolate-600">03</p>
+          <div>
+            <h2 class="font-serif text-3xl">Droit du travail</h2>
+            <p class="mt-3 max-w-3xl leading-relaxed text-chocolate-700">Contrats, avenants, procédures disciplinaires, ruptures conventionnelles, licenciements et contestations devant le conseil de prud'hommes. Employeurs et salariés sont reçus, jamais sur le même dossier.</p>
+          </div>
+        </article>
+        <article id="droit-de-la-famille" class="scroll-mt-28 grid gap-4 py-8 md:grid-cols-[8rem_1fr]">
+          <p class="font-serif text-chocolate-600">04</p>
+          <div>
+            <h2 class="font-serif text-3xl">Droit de la famille</h2>
+            <p class="mt-3 max-w-3xl leading-relaxed text-chocolate-700">Divorce, séparation, résidence des enfants, pension alimentaire, liquidation d'un régime matrimonial. Le cabinet privilégie un accord solide quand il est possible, et prépare le débat judiciaire quand il ne l'est pas.</p>
+          </div>
+        </article>
+        <article id="droit-immobilier" class="scroll-mt-28 grid gap-4 py-8 md:grid-cols-[8rem_1fr]">
+          <p class="font-serif text-chocolate-600">05</p>
+          <div>
+            <h2 class="font-serif text-3xl">Droit immobilier</h2>
+            <p class="mt-3 max-w-3xl leading-relaxed text-chocolate-700">Promesse et acte de vente, baux d'habitation, charges, troubles de voisinage, litiges de copropriété. Une relecture avant signature évite souvent un contentieux plus long.</p>
+          </div>
+        </article>
+        <article id="droit-penal" class="scroll-mt-28 grid gap-4 py-8 md:grid-cols-[8rem_1fr]">
+          <p class="font-serif text-chocolate-600">06</p>
+          <div>
+            <h2 class="font-serif text-3xl">Droit pénal</h2>
+            <p class="mt-3 max-w-3xl leading-relaxed text-chocolate-700">Garde à vue, convocation, audience correctionnelle, constitution de partie civile. L'avocat se déplace lorsque l'urgence l'exige. Les permanences exactes seront confirmées par le cabinet.</p>
+          </div>
+        </article>
+        <article id="contentieux" class="scroll-mt-28 grid gap-4 py-8 md:grid-cols-[8rem_1fr]">
+          <p class="font-serif text-chocolate-600">07</p>
+          <div>
+            <h2 class="font-serif text-3xl">Contentieux</h2>
+            <p class="mt-3 max-w-3xl leading-relaxed text-chocolate-700">Mise en demeure, assignation, référé, suivi d'audience et exécution de la décision. Avant de plaider, le cabinet chiffre le risque, le délai probable et le coût, pour que le choix d'agir soit éclairé.</p>
+          </div>
+        </article>
+      </div>
+      <p class="mt-10"><a class="inline-block bg-chocolate-900 px-5 py-3 text-sm font-semibold text-beige-50 hover:bg-chocolate-800" href="../contact/">Décrire une situation</a></p>
     </main>
-    <footer class="site-footer">
-      <p>Cabinet d'avocats [Nom du cabinet] — [12 rue Example], [75000] [Paris]</p>
-      <p><a href="tel:+33100000000">[+33 1 00 00 00 00]</a> — <a href="mailto:contact@cabinet.example">[contact@cabinet.example]</a></p>
+    <footer class="bg-chocolate-900 text-beige-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-end justify-between gap-4 px-5 py-10 sm:px-8">
+        <p class="font-serif text-2xl text-beige-50">Interco cabinet</p>
+        <a class="text-sm hover:text-beige-50" href="mailto:contact@interco-cabinet.example">contact@interco-cabinet.example</a>
+      </div>
+      <p class="border-t border-white/10 px-5 py-4 text-center text-xs text-beige-300">© 2026 Interco cabinet. Descriptifs indicatifs, hors conseil juridique.</p>
     </footer>
+    <script src="../assets/js/nav.js"></script>
   </body>
 </html>
